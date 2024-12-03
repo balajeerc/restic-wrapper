@@ -1,6 +1,6 @@
 # Restic Backup
 
-A tiny bash script wrapper around [Restic](https://restic.net/) to backup folders on your machine
+A tiny bash script wrapper around [Restic](https://restic.net/) to backup folders on your machine to an S3 bucket with snapshots
 
 ## Highlights
 
@@ -21,7 +21,7 @@ A tiny bash script wrapper around [Restic](https://restic.net/) to backup folder
 3. Configure the variables in `config.sh` as needed
 3. Replace `myuser` in `log_rotate.conf` with your user name
 
-> NOTE: Restic backups are encrypted. You'd best not forget the password supplied to it `config.sh` :)
+> NOTE: Restic backups are encrypted. You'd best not forget the password supplied to it in `config.sh` :)
 
 ## Running
 
