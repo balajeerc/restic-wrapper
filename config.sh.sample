@@ -1,0 +1,15 @@
+export AWS_ACCESS_KEY_ID="awsaccesskey"
+export AWS_SECRET_ACCESS_KEY=awssecretaccesskey
+# Change the region of the bucket from us-east to whatever as you need
+export RESTIC_REPOSITORY=s3:s3.us-east-1.amazonaws.com/your-bucket-name
+export RESTIC_PASSWORD=a-suitable-password-for-restic-dont-forget-this!
+# Optional OpsGenie key. Leave it blank to not raise alerts
+export OPSGENIE_API_KEY="enter-ops-genie-key"
+export OPSGENIE_API_URL="https://api.opsgenie.com/v2/alerts"
+export SNAPSHOTS_COUNT=5
+
+# Define an array of directories to back up
+declare -a DIRECTORIES_TO_BACKUP=(
+    "/home/myuser/folder1"
+    "/home/myuser/some_subfolder/folder2"
+)
